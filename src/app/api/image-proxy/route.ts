@@ -12,6 +12,9 @@ export async function GET(request: NextRequest) {
   
   try {
     const controller = new AbortController();
+
+
+    // set up timeout controller to abort fetch if it takes too long
     const timeoutId = setTimeout(() => controller.abort(), 15000); 
     
     const response = await fetch(url, { 

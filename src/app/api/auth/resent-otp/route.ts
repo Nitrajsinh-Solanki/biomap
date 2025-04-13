@@ -30,8 +30,10 @@ export async function POST(request: NextRequest) {
       );
     }
     
+    // remove existing otp for the user
     await deleteOTP(email);
-    
+   
+    // generate new 6 digit otp
     const otp = Math.floor(100000 + Math.random() * 900000).toString();
     
     await storeOTP(email, otp);

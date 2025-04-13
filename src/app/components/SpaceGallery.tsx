@@ -61,7 +61,7 @@ export default function SpaceGallery({ onSelectMedia }: SpaceGalleryProps) {
       // Build the search URL with parameters
       let url = `https://images-api.nasa.gov/search?q=${encodeURIComponent(query)}`;
       
-      // Only allow image or video media types
+      // two options for media type first is images and second one is videos 
       const filteredMediaType = mediaType === 'audio' ? 'image' : mediaType;
       if (filteredMediaType) url += `&media_type=${filteredMediaType}`;
       
@@ -78,7 +78,7 @@ export default function SpaceGallery({ onSelectMedia }: SpaceGalleryProps) {
       const data = await response.json();
       
       if (data.collection && data.collection.items) {
-        // Filter out any audio items that might be returned
+        // filtering is implemented here 
         const filteredItems = data.collection.items.filter((item: NasaMediaItem) => {
           const mediaType = item.data?.[0]?.media_type;
           return mediaType === 'image' || mediaType === 'video';
@@ -90,7 +90,7 @@ export default function SpaceGallery({ onSelectMedia }: SpaceGalleryProps) {
           setResults(prev => [...prev, ...filteredItems]);
         }
         
-        // Check if there are more pages
+        
         setHasMore(data.collection.links && 
           data.collection.links.some((link: NasaMediaLink) => link.rel === 'next'));
       } else {
@@ -136,10 +136,9 @@ export default function SpaceGallery({ onSelectMedia }: SpaceGalleryProps) {
             {results.map((item, index) => {
               const metadata = item.data && item.data[0];
               
-              // Skip items without metadata
               if (!metadata) return null;
               
-              // Get the thumbnail image if available
+              // Getting thumbnail image to showcase
               const thumbnail = item.links && item.links.find((link: NasaMediaLink) => link.rel === 'preview');
               
               // Skip items without thumbnails
@@ -159,7 +158,7 @@ export default function SpaceGallery({ onSelectMedia }: SpaceGalleryProps) {
                         fill
                         sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
                         className="object-cover"
-                        unoptimized={true} // Skip Next.js image optimization
+                        unoptimized={true} 
                       />
                     ) : metadata.media_type === 'video' ? (
                       <div className="relative h-full bg-black flex items-center justify-center">

@@ -22,6 +22,7 @@ export default function DashboardNavbar({ user }: DashboardNavbarProps) {
   const [isProfileOpen, setIsProfileOpen] = useState(false);
   const router = useRouter();
 
+  //logout handling and removing token from the local storage 
   const handleLogout = () => {
     localStorage.removeItem('token');
     localStorage.removeItem('user');
@@ -43,6 +44,7 @@ export default function DashboardNavbar({ user }: DashboardNavbarProps) {
             </Link>
           </div>
 
+{/* dashboard navbar multiple options for big screen devices starting from here   */}
           <div className="hidden md:ml-6 md:flex md:items-center md:space-x-6">
             <Link 
               href="/dashboard/space"
@@ -82,6 +84,7 @@ export default function DashboardNavbar({ user }: DashboardNavbarProps) {
             </Link>
           </div>
 
+{/* Profile section is implemented here  */}
           <div className="hidden md:ml-6 md:flex md:items-center">
             <div className="relative ml-3">
               <button
@@ -161,6 +164,8 @@ export default function DashboardNavbar({ user }: DashboardNavbarProps) {
         </div>
       </div>
 
+
+{/* hamburger menu for small screen size devices to make it responsive  */}
       {isMenuOpen && (
         <div className="md:hidden bg-white shadow-inner border-t border-gray-100 animate-fadeIn">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">

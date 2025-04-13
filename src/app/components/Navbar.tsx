@@ -13,7 +13,7 @@ export default function Navbar() {
       <div className="container mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
          
-         
+         {/* navbar for homepage which contains login , register and website name biomap in it  */}
           <Link href="/" className="flex items-center group">
             <span className="text-2xl font-extrabold text-green-600 tracking-tight group-hover:text-green-700 transition-colors duration-300">
               BioMap
@@ -71,6 +71,7 @@ export default function Navbar() {
         </div>
 
         
+        {/* for small screen devices hamburger menu */}
         {isMenuOpen && (
           <div className="md:hidden mt-3 py-3 border-t border-gray-100 animate-fadeIn">
             <div className="flex flex-col space-y-3">

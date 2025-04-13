@@ -19,7 +19,8 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const user = await User.findOne({ email });
+// Look for a user with the provided email in the database
+const user = await User.findOne({ email });
     if (!user) {
       return NextResponse.json(
         { message: 'Invalid email or password' },

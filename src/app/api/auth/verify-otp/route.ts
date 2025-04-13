@@ -28,6 +28,7 @@ export async function POST(request: NextRequest) {
       );
     }
     
+    // verifies that provided otp is valid or not
     const isValid = await verifyOTP(email, otp);
     if (!isValid) {
       return NextResponse.json(
@@ -36,6 +37,7 @@ export async function POST(request: NextRequest) {
       );
     }
     
+    // mark user as verified and save to db. 
     user.verified = true;
     await user.save();
     

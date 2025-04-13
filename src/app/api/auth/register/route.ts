@@ -20,6 +20,7 @@ export async function POST(request: NextRequest) {
       );
     }
     
+    // Check if a user with the same email already exists or not 
     const existingUser = await User.findOne({ email });
     if (existingUser) {
       return NextResponse.json(
@@ -31,8 +32,12 @@ export async function POST(request: NextRequest) {
     const salt = await bcrypt.genSalt(10);
     const hashedPassword = await bcrypt.hash(password, salt);
     
+    //generate 6 digit otp 
     const otp = Math.floor(100000 + Math.random() * 900000).toString();
     
+
+
+    // temporary storing otp to mongodb after verification it will automatically deleted from mongodb.
     await storeOTP(email, otp);
     
     const newUser = new User({
@@ -44,7 +49,7 @@ export async function POST(request: NextRequest) {
     
     await newUser.save();
     
- 
+ // Send OTP to user's email for verification
     await sendOTPEmail(email, name, otp);
     
     return NextResponse.json(
