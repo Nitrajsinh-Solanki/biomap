@@ -1,5 +1,3 @@
----
----
 
 ## 🌍 BioMap - Interactive Biodiversity and Science Platform
 
