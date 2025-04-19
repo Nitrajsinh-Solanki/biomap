@@ -236,3 +236,12 @@ See the [LICENSE](./LICENSE) file for full license text.
 - iNaturalist Observations
 
 ---
+
+## 📬 Connect with Me
+
+- **Discord**: `nitrajsinhsolanki`  
+- **Twitter**: [@Nitrajsinh2005](https://twitter.com/Nitrajsinh2005)
+
+Feel free to reach out for feedback, collaboration, or just to say hi! 😊
+
+--- 
