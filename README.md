@@ -228,8 +228,6 @@ See the [LICENSE](./LICENSE) file for full license text.
 
 ---
 
----
-
 ## 🙌 Acknowledgements
 
 - NASA Open APIs
