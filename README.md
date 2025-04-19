@@ -152,7 +152,7 @@ Directory structure:
 git clone https://github.com/Nitrajsinh-Solanki/biomap.git
 
 # Navigate to the project directory
-cd nitrajsinh-solanki-biomap
+cd biomap
 ```
 
 2. **Install dependencies**:
