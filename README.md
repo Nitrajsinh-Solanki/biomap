@@ -29,7 +29,7 @@
 
 ```
 Directory structure:
-└── nitrajsinh-solanki-biomap/                          
+└── biomap/                          
     ├── public/                                   // Static assets served directly by Next.js
     │   └── images/                               // Static image files used throughout the application
     └── src/
