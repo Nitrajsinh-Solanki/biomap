@@ -18,11 +18,11 @@
 
 ---
 
-## 🌐 Live Demo and Video
+## 🌐 Live Demo and Videos
 
 - [🔗 Live Demo](https://biomap-nitrajsinh-solankis-projects.vercel.app)
 - [🎥 Demo Video](https://youtu.be/df_NNqL2DzA?feature=shared)
-
+- [🛠️ Setup Guide Video](https://youtu.be/gtmI89ZrGck?feature=shared)
 ---
 
 ## 🧭 Directory Structure
