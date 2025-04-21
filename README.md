@@ -1,8 +1,28 @@
+![MIT License](https://img.shields.io/badge/License-MIT-green.svg)
+![Next.js](https://img.shields.io/badge/Next.js-14-blue)
+![MongoDB](https://img.shields.io/badge/Database-MongoDB-green)
 
+
+---
 ## 🌍 BioMap - Interactive Biodiversity and Science Platform
 
 **BioMap** is a powerful and visually engaging scientific web application designed for biodiversity enthusiasts, researchers, and learners. It brings together a suite of features powered by real-time APIs for exploring biodiversity, chemistry, space, environmental monitoring, and educational resources — all in one place.
 
+---
+
+## 📚 Table of Contents
+
+- [Features](#-features)
+- [Live Demo and Showcase](#-live-demo-and-video-showcase)
+- [Why BioMap?](#-why-biomap)
+- [Directory Structure](#-directory-structure)
+- [API Integrations](#-api-integrations)
+- [Getting Started](#-getting-started)
+- [Authentication Workflow](#-authentication-workflow)
+- [Tech Stack](#-tech-stack)
+- [License](#-license)
+- [Acknowledgements](#-acknowledgements)
+- [Contact](#-contact)
 ---
 
 ## ✨ Features
@@ -18,11 +38,20 @@
 
 ---
 
-## 🌐 Live Demo and Videos
+## 🌐 Live Demo and Video Showcase
 
-- [🔗 Live Demo](https://biomap-nitrajsinh-solankis-projects.vercel.app)
-- [🎥 Demo Video](https://youtu.be/df_NNqL2DzA?feature=shared)
-- [🛠️ Setup Guide Video](https://youtu.be/gtmI89ZrGck?feature=shared)
+**Live App**: [biomap-nitrajsinh-solankis-projects.vercel.app](https://biomap-nitrajsinh-solankis-projects.vercel.app)
+
+🎥 Product Demo: [Watch the Demo](https://youtu.be/df_NNqL2DzA?feature=shared)  
+🛠️ Setup Tutorial: [Installation Guide](https://youtu.be/gtmI89ZrGck?feature=shared)
+---
+---
+## ❓ Why BioMap?
+
+- 🌍 Combines multiple science domains into a single platform  
+- 🔗 Uses real-time data from trusted public APIs  
+- 🧠 Simple UI, powerful insights, and accessible from any device  
+- 💡 Open-source and easy to deploy  
 ---
 
 ## 🧭 Directory Structure
@@ -237,11 +266,9 @@ See the [LICENSE](./LICENSE) file for full license text.
 
 ---
 
-## 📬 Connect with Me
+## 📬 Contact
 
-- **Discord**: `nitrajsinhsolanki`  
-- **Twitter**: [@Nitrajsinh2005](https://twitter.com/Nitrajsinh2005)
-
-Feel free to reach out for feedback, collaboration, or just to say hi! 😊
+- 💬 Discord: `nitrajsinhsolanki`
+- 🐦 X/Twitter: [@Nitrajsinh2005](https://twitter.com/Nitrajsinh2005)
 
 --- 
