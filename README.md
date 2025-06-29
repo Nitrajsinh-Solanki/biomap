@@ -2,6 +2,18 @@
 ![Next.js](https://img.shields.io/badge/Next.js-14-blue)
 ![MongoDB](https://img.shields.io/badge/Database-MongoDB-green)
 
+# 🏆 BioMap – 4th Place Winner ($70 Prize) 🎉
+
+> Awarded **4th Place** in the **StackUp May 2025 Challenge** with a prize of **$70** for building a fully-featured scientific web application — BioMap.
+
+---
+
+## 🖼️ Proof of Participation & Reward
+
+![Screenshot 1](./Screenshot%202025-06-29%20145411.png)  
+![Screenshot 2](./Screenshot%202025-06-29%20145427.png)  
+![Screenshot 3](./Screenshot%202025-06-29%20145445.png)  
+![Screenshot 4](./Screenshot%202025-06-29%20145511.png)
 
 ---
 ## 🌍 BioMap - Interactive Biodiversity and Science Platform
